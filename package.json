@@ -16,9 +16,9 @@
   "scripts": {
     "build": "webpack --config webpack.config.js --env prod",
     "start": "webpack --config webpack.config.js --watch --env dev",
-    "integration-test": "clear && yarn build && jest --runInBand --detectOpenHandles ./__tests__/*.spec.js",
-    "test": "jest ./src/**/*.spec.js",
-    "test:watch": "jest ./src/**/*.spec.js --watch"
+    "test:integration": "clear && yarn build && jest --runInBand --detectOpenHandles ./__tests__/*.spec.js",
+    "test:unit": "jest ./src/*.spec.js",
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
